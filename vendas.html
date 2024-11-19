@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Vendas - Loja de Móveis</title>
+    <link rel="stylesheet" href="/styles/venda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Loja de Móveis</div>
+            <ul class="links-navegacao">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="vendas.html">Loja</a></li>
+            </ul>
+            <div class="icone">
+                <input type="text" placeholder="Buscar">
+                <a href="#" class="icone">
+                    <img src="imgs/carrinho.png" alt="Carrinho de Compras">
+                </a>
+                <a href="#" class="icone">
+                    <img src="imgs/perfil.png" alt="Perfil do Usuário">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ofertas Exclusivas da Loja de Móveis -->
+    <main>
+        <section class="promocoes">
+            <h1>Ofertas Exclusivas da Loja de Móveis</h1>
+            <p>Explore nossas ofertas especiais e descontos imperdíveis em produtos selecionados!</p>
+            <div class="produtos-container">
+                <!-- Produtos serão adicionados aqui de acordo com suas instruções -->
+            </div>
+        </section>
+    </main>
+
+    <div class="categorias-e-produtos">
+        <section class="painel-filtrado">
+            <h2>Produtos</h2>
+            <div class="filtro-container">
+                <label for="filtro">Ordenar por:</label>
+                <select id="filtro" class="filtro-select">
+                    <option value="">Selecione</option>
+                    <option value="preco-mais-baixo">Preço mais baixo</option>
+                    <option value="preco-mais-alto">Preço mais alto</option>
+                </select>
+            </div>
+            <div class="produtos-filtrados-container">
+                <!-- Produtos filtrados serão adicionados aqui -->
+            </div>
+        </section>
+        <!-- Barra lateral de categorias -->
+        <aside class="barra-lateral">
+            <h2>Categorias</h2>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Quarto <span class="seta">▼</span></a>
+                    <ul class="subcategorias">
+                        <li><a href="#" data-categoria="quarto" data-subcategoria="camas">Camas</a></li>
+                        <li><a href="#" data-categoria="quarto" data-subcategoria="colchoes">Colchões</a></li>
+                        <li><a href="#" data-categoria="quarto" data-subcategoria="guarda-roupas">Guarda-Roupas</a></li>
+                        <li><a href="#" data-categoria="quarto" data-subcategoria="comodas">Cômodas</a></li>
+                        <li><a href="#" data-categoria="quarto" data-subcategoria="cabeceras">Cabeceiras</a></li>
+                        <li><a href="#" data-categoria="quarto" data-subcategoria="espelhos">Espelhos</a></li>
+                        <li><a href="#" data-categoria="quarto" data-subcategoria="pufes">Pufes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Sala <span class="seta">▼</span></a>
+                    <ul class="subcategorias">
+                        <li><a href="#" data-categoria="sala" data-subcategoria="sofas">Sofás</a></li>
+                        <li><a href="#" data-categoria="sala" data-subcategoria="mesas-de-centro">Mesas de Centro</a>
+                        </li>
+                        <li><a href="#" data-categoria="sala" data-subcategoria="poltronas">Poltronas</a></li>
+                        <li><a href="#" data-categoria="sala" data-subcategoria="painel-para-tv">Painel para TV</a></li>
+                        <li><a href="#" data-categoria="sala" data-subcategoria="aparador">Aparador</a></li>
+                        <li><a href="#" data-categoria="sala" data-subcategoria="estante">Estante</a></li>
+                        <li><a href="#" data-categoria="sala" data-subcategoria="rack">Rack</a></li>
+                        <li><a href="#" data-categoria="sala" data-subcategoria="tapetes">Tapetes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Cozinha <span class="seta">▼</span></a>
+                    <ul class="subcategorias">
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="mesas-de-cozinha">Mesas de
+                                Cozinha</a></li>
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="cadeiras">Cadeiras</a></li>
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="bancos-altos">Bancos Altos</a></li>
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="armarios-planejados">Armários
+                                Planejados</a></li>
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="ilha-de-cozinha">Ilha de Cozinha</a>
+                        </li>
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="estantes-e-prateleiras">Estantes e
+                                Prateleiras</a></li>
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="bancadas">Bancadas</a></li>
+                        <li><a href="#" data-categoria="cozinha" data-subcategoria="gaveteiros">Gaveteiros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Escritório <span class="seta">▼</span></a>
+                    <ul class="subcategorias">
+                        <li><a href="#" data-categoria="escritorio" data-subcategoria="mesas-de-escritorio">Mesas de
+                                Escritório</a></li>
+                        <li><a href="#" data-categoria="escritorio" data-subcategoria="cadeiras-ergonomicas">Cadeiras
+                                Ergonômicas</a></li>
+                        <li><a href="#" data-categoria="escritorio" data-subcategoria="estantes-de-livros">Estantes de
+                                Livros</a></li>
+                        <li><a href="#" data-categoria="escritorio" data-subcategoria="armarios-arquivadores">Armários
+                                Arquivadores</a></li>
+                        <li><a href="#" data-categoria="escritorio" data-subcategoria="gaveteiros">Gaveteiros</a></li>
+                        <li><a href="#" data-categoria="escritorio" data-subcategoria="prateleiras">Prateleiras</a></li>
+                        <li><a href="#" data-categoria="escritorio" data-subcategoria="bancadas">Bancadas</a></li>
+                        <li><a href="#" data-categoria="escritorio"
+                                data-subcategoria="estacao-de-trabalho-modular">Estação de Trabalho Modular</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Banheiro <span class="seta">▼</span></a>
+                    <ul class="subcategorias">
+                        <li><a href="#" data-categoria="banheiro" data-subcategoria="gabinetes">Gabinetes</a></li>
+                        <li><a href="#" data-categoria="banheiro" data-subcategoria="espelhos">Espelhos</a></li>
+                        <li><a href="#" data-categoria="banheiro" data-subcategoria="prateleiras">Prateleiras</a></li>
+                        <li><a href="#" data-categoria="banheiro" data-subcategoria="bancadas">Bancadas</a></li>
+                        <li><a href="#" data-categoria="banheiro" data-subcategoria="porta-toalhas">Porta-Toalhas</a>
+                        </li>
+                        <li><a href="#" data-categoria="banheiro" data-subcategoria="armarios-suspensos">Armários
+                                Suspensos</a></li>
+                        <li><a href="#" data-categoria="banheiro" data-subcategoria="banquetas">Banquetas</a></li>
+                        <li><a href="#" data-categoria="banheiro"
+                                data-subcategoria="organizadores-de-banheiro">Organizadores de Banheiro</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Lazer <span class="seta">▼</span></a>
+                    <ul class="subcategorias">
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="moveis-de-area-externa">Móveis de Área
+                                Externa</a></li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="churrasqueiras">Churrasqueiras</a>
+                        </li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="espreguicadeiras">Espreguiçadeiras</a>
+                        </li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="guarda-sois">Guarda-sóis</a></li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="balcoes-para-area-gourmet">Balcões
+                                para Área Gourmet</a></li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="bancos-de-jardim">Bancos de Jardim</a>
+                        </li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="redes-e-cadeiras-suspensas">Redes e
+                                Cadeiras Suspensas</a></li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="gazebos">Gazebos</a></li>
+                        <li><a href="#" data-categoria="lazer" data-subcategoria="jogos-de-mesa-para-varanda">Jogos de
+                                Mesa para Varanda</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <div class="conteudo-rodape">
+            <p>Siga nas redes sociais:</p>
+            <div class="icone-redes-sociais">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>&copy; 2024 Loja de Móveis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/ofertas.js"></script>
+    <script src="scripts/mostruario.js"></script>
+    <script src="scripts/venda_categoria.js"></script>
+    <script src="scripts/ordem_filtro.js"></script>
+
+
+</body>
+
+</html>

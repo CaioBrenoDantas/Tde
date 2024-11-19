@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Móveis</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Loja de Móveis</div>
+            <ul class="links-navegacao">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Loja</a></li>
+            </ul>
+            <div class="icone">
+                <input type="text" placeholder="Buscar">
+                <a href="#" class="icone">
+                    <img src="imgs/carrinho.png" alt="Carrinho de Compras">
+                </a>
+                <a href="#" class="icone">
+                    <img src="imgs/perfil.png" alt="Perfil do Usuário">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="tela_principal">
+        <h1>Encontre o Móvel dos Seus Sonhos</h1>
+        <p>Estiloso, moderno e confortável. Decore sua casa com peças de alta qualidade.</p>
+        <a href="vendas.html" class="botao">Compre Agora</a>
+    </section>
+
+    <section class="categorias">
+        <h2>Compre por Categoria</h2>
+        <div class="carrossel-container">
+            <div class="grade-categorias">
+                <div class="categoria">
+                    <img src="imgs/sala.jpg" alt="Sala de Estar">
+                    <h3>Sala de Estar</h3>
+                    <a href="#" class="botao">Explorar</a>
+                </div>
+                <div class="categoria">
+                    <img src="imgs/quarto.jpeg" alt="Quarto">
+                    <h3>Quarto</h3>
+                    <a href="#" class="botao">Explorar</a>
+                </div>
+                <div class="categoria">
+                    <img src="imgs/escritorio.jpg" alt="Escritório">
+                    <h3>Escritório</h3>
+                    <a href="#" class="botao">Explorar</a>
+                </div>
+                <div class="categoria">
+                    <img src="imgs/lazer.jpeg" alt="Área Externa">
+                    <h3>Área Externa</h3>
+                    <a href="#" class="botao">Explorar</a>
+                </div>
+                <div class="categoria">
+                    <img src="imgs/cozinha-planejada.jpg" alt="Cozinha">
+                    <h3>Cozinha</h3>
+                    <a href="#" class="botao">Explorar</a>
+                </div>
+                <div class="categoria">
+                    <img src="imgs/banheiro.jpeg" alt="Banheiro">
+                    <h3>Banheiro</h3>
+                    <a href="#" class="botao">Explorar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="carrossel-indicadores-section">
+        <div class="carrossel-indicadores">
+            <span class="indicador ativo" data-index="0"></span>
+            <span class="indicador" data-index="1"></span>
+            <span class="indicador" data-index="2"></span>
+        </div>
+    </section>
+
+    <rodape>
+        <div class="conteudo-rodape">
+            <p>Siga nas redes sociais:</p>
+            <div class="icone-redes-sociais">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>&copy; 2024 Loja de Móveis. Todos os direitos reservados.</p>
+        </div>
+    </rodape>
+    <script src="/scripts/carrossel.js"></script>
+    <script src="/scripts/indicador.js"></script>
+</body>
+</html>
